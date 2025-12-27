@@ -4,7 +4,7 @@
 #header{
  background-color: rgba(0, 0, 0, 0.7) ;
  background-blend-mode: overlay;
- display: flex;
+
  justify-content: center;
 background-image: url(hero\ section.jpg);
     background-size: cover;
@@ -331,6 +331,10 @@ margin-top: 10px;
 font-size: 2rem;
 background-color: transparent;
 margin-left: 20px;
+}
+#unl{
+    padding-top: 30%;
+    padding-right:  30%;
 }
 #q2{
     height: 80px;
