@@ -1,0 +1,215 @@
+*{
+    margin-left: 50px;
+    background-color: beige;
+    margin-top: 0%;
+    
+}
+#main{
+    display: flex;
+}
+#zomato{
+    font-family:"Helvetica Neue Black", "Arial Black", sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    
+
+}
+.icon{
+text-align: left;
+margin-left: 0%;
+margin-top: 7px;
+color: rgba(165, 42, 42, 0.871);
+
+}
+#add{
+    text-align: left;
+margin-left: 0%;
+margin-top: 7px;
+color: rgba(0, 0, 0, 0.516);
+}
+#search{
+    text-align: left;
+margin-left: 1px;
+margin-top: 7px;
+color: rgba(0, 0, 0, 0.516);
+
+}
+#restaurant{
+    text-align: left;
+margin-left: 1px;
+margin-top: 7px;
+color: rgba(0, 0, 0, 0.516);
+}
+#address{
+    width: 500px;
+    height: 35px;
+    border: 2px solid rgba(245, 222, 179, 0.5);
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 0.5rem;
+    display: flex;
+    text-align: left;
+    
+    
+}
+#login{
+     margin-top: 20px;
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+
+#signup{
+     margin-top: 20px;
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+#dinning{
+    display: flex;
+}
+#dinn{
+    height: 50px;
+    margin-left: 70px;
+    font-size: larger;
+}
+#dinnout{
+    margin-left: 10px;
+    color: brown;
+    font-size: larger;
+}
+#delivery{
+    margin-left: 50px;
+}
+#del{
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: 0.5rem;
+}
+#nlife{
+  margin-left: 10px;
+    font-size: larger;
+    font-weight: 0.5rem
+}
+#col{
+    font-size: 1rem;
+}
+#res1{
+display: inline-block;
+background-size: cover;
+border-radius: 0.5rem;
+box-sizing: content-box;
+}
+#hlw:hover{
+     transition: 0.3s;
+   transform: scale(1.03);
+}
+#res2{
+    border-radius: 1rem;
+   display: flex;
+   width: 300px;
+   height: auto;
+}
+#img1:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img2:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img3:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#res3{
+    border-radius: 1rem;
+   display: flex;
+   width: 300px;
+   height: auto;
+}
+#img4:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img5:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img6:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#res4{
+    border-radius: 1rem;
+   display: flex;
+   width: 300px;
+   height: auto;
+}
+#img7:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img8:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img9:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#res5{
+    border-radius: 1rem;
+   display: flex;
+   width: 300px;
+   height: auto;
+}
+#img10:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img11:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#img12:hover{
+ transition: 0.3s;
+   transform: scale(1.03);
+}
+#first{
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 90%;
+    height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.642);
+}
+#first p{
+    margin-top: 20px;
+font-size: 2rem;
+color: rgba(0, 0, 0, 0.403);
+}
+#second{
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 90%;
+    height: 50px;
+    border: 2px solid  rgba(0, 0, 0, 0.642);
+}
+#second p{
+    margin-top: 20px;
+font-size: 2rem;
+color: rgba(0, 0, 0, 0.403);
+}
+#third{
+    display: flex;
+    align-items: center;
+   border-radius: 0.5rem;
+    width: 90%;
+    height: 50px;
+    border: 2px solid  rgba(0, 0, 0, 0.642);
+}
+#third p{
+    margin-top: 20px;
+font-size: 2rem;
+color: rgba(0, 0, 0, 0.403);
+}

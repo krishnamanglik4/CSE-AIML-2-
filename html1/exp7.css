@@ -1,0 +1,158 @@
+#header{
+    display: block;
+    justify-content: center;
+}
+h2{
+    margin-left: 30px;
+}
+h3{
+      margin-top: 6px;
+}
+h4{
+  
+display: inline;
+     justify-content: center;
+     
+     
+}
+h5{
+    justify-content: center;
+    display: flex;
+}
+#home{
+    background-color: rgba(0, 0, 255, 0.522);
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    height: 50px;
+     margin-left: 30px;
+}
+#product{
+    background-color: rgba(0, 0, 255, 0.522);
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    height: 50px;
+     margin-left: 30px;
+}
+#About{
+    background-color: rgba(0, 0, 255, 0.522);
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    height: 50px;
+     margin-left: 30px;
+}
+#contact{
+    background-color: rgba(0, 0, 255, 0.522);
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    height: 50px;
+     margin-left: 30px;
+}
+#inline{
+    display: inline;
+     padding: 2px 10px;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    
+    
+}
+
+#home2{
+    display: inline;
+    background-color:rgb(60, 120, 60);
+    padding: 2px 10px;
+    height: 50px;
+
+}
+#product2{
+    display: inline;
+    background-color:rgb(60, 120, 60);
+      padding: 2px 10px;
+    
+}
+#About2{
+    display: inline;
+    background-color:rgb(60, 120, 60);
+     padding: 2px 10px;
+}
+#contact2{
+    display: inline;
+    background-color:rgb(60, 120, 60);
+     padding: 2px 10px;
+}
+
+
+#inline-block{
+
+    width: auto;
+    color: white;
+    font-size: 1.2rem;
+    
+    
+
+    
+}
+#home3{
+    display: inline-block;
+    width: 100px;
+    margin-left: 50px;
+
+}
+#product3{
+    display: inline-block;
+    width: 100px;
+      margin-left: 50px;
+    
+}
+#About3{
+    display: inline-block;
+    width: 100px;
+    
+      margin-left: 50px;
+}
+#contact3{
+    display: inline-block;
+    width: 100px;
+      margin-left: 50px;
+}
+
+#float{
+
+}
+h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    
+}
+#home4{
+    float: inline-start;
+    width: 100px;
+    margin-left: 50px;
+    background-color: rgba(236, 156, 7, 0.604);
+
+}
+#product4{
+    float: inline-start;
+    width: 100px;
+      margin-left: 50px;
+     background-color: rgba(219, 147, 12, 0.726);
+}
+#About4{
+  float: inline-start;
+    width: 100px;
+     background-color: rgba(209, 140, 11, 0.642);
+      margin-left: 50px;
+}
+#contact4{
+   float: inline-start;
+    width: 100px;
+      margin-left: 50px;
+       background-color: #da920ea1;
+}
