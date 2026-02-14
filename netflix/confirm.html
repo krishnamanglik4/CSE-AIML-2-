@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            margin-top: 200px;
+            
+        }
+    </style>
+</head>
+<body style="background-color: rgb(218, 104, 104);">
+    <h1>ARE YOU SURE TO LOG OUT</h1>
+<div style="display: flex;">
+    <div id="cancel" style=" border: 2px solid black;background-color: rgb(125, 201, 201); height: 60px;width: 150px; border-radius: 12px;margin-left: 450px;margin-top: 70px;">
+        <h2 style="color: green; align-items: center; display: flex; justify-content: center;">CANCEL</h2>
+    </div>
+    <div id="exit" style=" border: 2px solid black;background-color: rgb(125, 201, 201); height: 60px;width: 150px; border-radius: 12px;margin-top: 70px;margin-left: 260px;">
+        <h2 style="color: green; align-items: center; display: flex; justify-content: center;">LOG OUT</h2>
+    </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("cancel");
+        a.addEventListener("click", () => {
+    window.location.href = "movies.html";
+  });
+          let b = document.getElementById("exit");
+        b.addEventListener("click", () => {
+    window.location.href = "index.html";
+  });
+
+    </script>
+</body>
+</html>

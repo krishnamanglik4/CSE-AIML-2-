@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Showcase</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #141414;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        width: 90vw;
+        margin-left: 60px;
+        background-color: rgba(59, 57, 57, 0.54);
+        height: 90px;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
+      }
+
+      header,
+      footer {
+        text-align: center;
+        padding: 20px;
+      }
+
+      h3.section-title {
+        margin-left: 100px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #fff;
+        margin-top: 100px;
+        letter-spacing: 2px;
+      }
+      /* 
+    .gradient-line {
+      height: 4px;
+      width: 80%;
+      margin: 20px auto;
+      border-bottom: 4px solid transparent;
+      border-image: linear-gradient(90deg, #ff0066 0%, #6600ff 50%, #ff0066 100%) 1;
+    } */
+
+      .container1 {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .movie1 {
+        position: relative; /* important for overlay positioning */
+        width: 200px;
+        height: 350px;
+        border: 2px solid #000;
+        border-radius: 12px;
+        overflow: hidden;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .movie1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .movie1:hover {
+        transform: scale(1.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+      }
+
+      /* Overlay hidden by default */
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      /* Show overlay on hover */
+      .movie1:hover .overlay {
+        opacity: 1;
+      }
+
+      /* Play button style */
+      .play-btn {
+        background: #e50914;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .play-btn:hover {
+        background: #f40612;
+      }
+
+      footer {
+        margin-top: 50px;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .movie1 {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1.section-title {
+          font-size: 1.5rem;
+        }
+        .movie1 {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <p class="movies">
+          <i class="fa-solid fa-film" style="margin-right: 20px"></i> MOVIES
+        </p>
+        <p class="sports">
+          <i class="fa-solid fa-volleyball" style="margin-right: 20px" ;></i>
+          SPORTS
+        </p>
+        <p class="tv">
+          <i class="fa-solid fa-tv" style="margin-right: 20px"></i> TV SHOWS
+        </p>
+        <p class="search">
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="margin-right: 20px"
+          ></i>
+          SEARCH
+        </p>
+        <p class="logout">
+          <i
+            class="fa-solid fa-right-from-bracket"
+            style="margin-right: 20px"
+          ></i >
+          LOG OUT
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h3 class="section-title" id="trending">TRENDINGS</h3>
+        <div class="gradient-line"></div>
+        <div class="container1">
+          <div class="movie1">
+            <img src="box 1.jpg" alt="Trending movie 1" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 2.jpg" alt="Trending movie 2" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 3.jpg" alt="Trending movie 3" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 4.jpg" alt="Trending movie 4" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 5.jpg" alt="Trending movie 5" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 4.jpg" alt="Trending movie 4" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="section-title" id="sports">SPORTS</h3>
+        <!-- <div class="gradient-line"></div> -->
+        <div class="container1">
+          <div class="movie1">
+            <img src="images (3).jpeg" alt="Sports movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (1).jpeg" alt="Sports movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (2).jpeg" alt="Sports movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (3).jpeg" alt="Sports movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (4).jpeg" alt="Sports movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (5).jpeg" alt="Sports movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="section-title" id="movies">MOVIES</h3>
+        <!-- <div class="gradient-line"></div> -->
+        <div class="container1">
+          <div class="movie1">
+            <img src="images (5).jpeg" alt="Bollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="images (6).jpeg" alt="Bollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (6).jpeg" alt="Bollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (7).jpeg" alt="Bollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="download (8).jpeg" alt="Bollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="images (7).jpeg" alt="Bollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="section-title" id="tvshows">TV SHOWS</h3>
+        <!-- <div class="gradient-line"></div> -->
+        <div class="container1">
+          <div class="movie1">
+            <img src="box 1.jpg" alt="Hollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 2.jpg" alt="Hollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 3.jpg" alt="Hollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 4.jpg" alt="Hollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 5.jpg" alt="Hollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+          <div class="movie1">
+            <img src="box 4.jpg" alt="Hollywood movie" />
+            <div class="overlay">
+              <button class="play-btn">▶ Play</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 NetFlix. All rights reserved.</p>
+    </footer>
+    <script>
+  // LOGOUT
+  document.querySelector(".logout").addEventListener("click", () => {
+    window.location.href = "confirm.html";
+  });
+
+  // SEARCH
+  const searchBtn = document.querySelector(".search");
+  const nav = document.querySelector(".nav");
+
+  searchBtn.addEventListener("click", () => {
+    nav.innerHTML = `
+      <input 
+        type="text" 
+        placeholder="Search movies, shows..." 
+        style="
+          width: 60%;
+          height: 40px;
+          border-radius: 20px;
+          border: none;
+          padding-left: 20px;
+          font-size: 16px;
+          outline: none;
+        "
+      />
+      <button 
+        onclick="location.reload()" 
+        style="
+          height: 40px;
+          padding: 0 20px;
+          border-radius: 20px;
+          border: none;
+          cursor: pointer;
+          font-size: 15px;
+        "
+      >❌ Close</button>
+    `;
+  });
+
+  // PLAY BUTTON + GO BACK
+  const playBtns = document.querySelectorAll(".play-btn");
+
+  playBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      document.body.innerHTML = `
+        <div style="
+          height:100vh;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          gap:20px;
+          font-family:Arial;
+        ">
+          <h1>🚫 SORRY! CURRENTLY NOT AVAILABLE</h1>
+
+          <button 
+            onclick="window.location.href='movies.html'"
+            style="
+              padding:12px 30px;
+              font-size:18px;
+              border:none;
+              border-radius:8px;
+              cursor:pointer;
+              background:#e50914;
+              color:white;
+            "
+          >
+            ⬅ Go Back
+          </button>
+        </div>
+      `;
+    });
+  });
+
+  // NAVIGATION SCROLL
+document.querySelector(".sports").addEventListener("click", () => {
+  document.getElementById("sports").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+document.querySelector(".movies").addEventListener("click", () => {
+  document.getElementById("movies").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+document.querySelector(".tv").addEventListener("click", () => {
+  document.getElementById("tvshows").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+
+</script>
+
+  </body>
+</html>
